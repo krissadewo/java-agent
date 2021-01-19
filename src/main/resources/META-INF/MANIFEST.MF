@@ -1,4 +1,4 @@
-Agent-Class: com.etle.instrument.agent.Agent
+Agent-Class: or.id.greenlabs.instrument.agent.Agent
 Can-Redefine-Classes: true
 Can-Retransform-Classes: true
-Premain-Class: com.etle.instrument.agent.Agent
+Premain-Class: or.id.greenlabs.instrument.agent.Agent

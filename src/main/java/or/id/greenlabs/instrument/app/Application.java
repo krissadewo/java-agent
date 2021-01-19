@@ -1,4 +1,4 @@
-package com.etle.instrument.app;
+package or.id.greenlabs.instrument.app;
 
 import java.util.logging.Logger;
 

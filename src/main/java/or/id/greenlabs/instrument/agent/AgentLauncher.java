@@ -1,4 +1,4 @@
-package com.etle.instrument.agent;
+package or.id.greenlabs.instrument.agent;
 
 /**
  * @author krissadewo
