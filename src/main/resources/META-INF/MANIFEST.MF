@@ -1,0 +1,4 @@
+Agent-Class: com.etle.instrument.agent.Agent
+Can-Redefine-Classes: true
+Can-Retransform-Classes: true
+Premain-Class: com.etle.instrument.agent.Agent
