@@ -14,7 +14,7 @@ public class Agent {
     public static void premain(String agentArgs, Instrumentation inst) {
         logger.info("[Agent] In premain method");
 
-        String className = "com.etle.instrument.app.TaxService";
+        String className = "or.id.greenlabs.instrument.app.TaxService";
 
         transformClass(className, inst);
     }
@@ -22,7 +22,7 @@ public class Agent {
     public static void agentmain(String agentArgs, Instrumentation inst) {
         logger.info("[Agent] In agentmain method");
 
-        String className = "com.etle.instrument.app.TaxService";
+        String className = "or.id.greenlabs.instrument.app.TaxService";
 
         transformClass(className, inst);
     }

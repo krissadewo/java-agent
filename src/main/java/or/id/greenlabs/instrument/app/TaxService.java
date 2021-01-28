@@ -15,6 +15,12 @@ public class TaxService {
     public static void countTax(int amount) throws InterruptedException {
         Thread.sleep(2000L); //processing going on here
 
+        try {
+            int x = 9 / 0;
+        } catch (RuntimeException e) {
+            e.printStackTrace();
+        }
+
         LOGGER.info("[Application] Successful calculate tax of [{" + amount + "}] units!");
     }
 }

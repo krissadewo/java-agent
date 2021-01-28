@@ -48,6 +48,10 @@ public class TaxTransformer implements ClassFileTransformer {
                 ClassPool cp = ClassPool.getDefault();
                 cp.appendClassPath(new LoaderClassPath(loader));
 
+                if (cp.get("java.lang.ArithmeticException") != null) {
+                    LOGGER.warning("[Agent] Exception detected ");
+                }
+
                 CtClass cc = cp.get(targetClassName);
                 CtMethod m = cc.getDeclaredMethod(CALCULATE_TAX_METHOD);
 
